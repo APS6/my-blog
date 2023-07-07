@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+3:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Source Sans 3", sans-serif;
+    color: #d1d1d2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Libre Baskerville", serif;
+    color: #f1f1f2;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.post img {
+  margin: auto;
+  object-fit: contain;
+  max-width: 95%;
+}
+
+.post h2 {
+  font-size: 3rem;
+  color: #f1f1f2;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+.post p {
+  color: #d1d1d2;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+.post a {
+  text-decoration-line: underline;
+  text-decoration-color: #6e6f80;
+  text-decoration-thickness: 2px;
+}
+blockquote {
+  border-left: 3px solid white;
+  padding-left: 1rem;
+}
+
+.maindiv {
+  margin-bottom: 3.5rem;
+}
+.maindiv h1{
+  margin-bottom: 2rem;
+}
+.maindiv img {
+  margin-top: 3rem;
+}
+
+.card {
+  box-shadow: 3px 3px 5px 0px rgba(28, 30, 43, 0.29);
+}
+
+.secscreen{
+  min-height: calc(100svh - 5rem);
+}
+
+@media (max-width: 500px) {
+  .post h2{
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
