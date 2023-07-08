@@ -60,7 +60,7 @@ blockquote {
 }
 
 .card {
-  box-shadow: 3px 3px 5px 0px rgba(28, 30, 43, 0.29);
+  box-shadow: rgba(97, 97, 123, 0.3) 0px 0px 0px 2px;
 }
 
 .secscreen{

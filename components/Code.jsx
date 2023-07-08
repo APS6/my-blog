@@ -29,7 +29,7 @@ export default function Code(props) {
   }, []);
 
   return (
-    <div className="my-8 mx-auto max-w-[830px] px-4 pb-2 Code bg-[#09090a] rounded">
+    <div className="my-8 mx-auto max-w-[830px] px-4 pb-2 Code bg-[#09090a] rounded border-[1px] border-[hsla(0,0%,56%,.2)]">
       <div className="text-[#787878] flex justify-between items-center py-2 text-lg px-2 mb-0">
         <span className="mb-0">{file}</span>
         <div
