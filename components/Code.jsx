@@ -5,6 +5,9 @@ import Prism from "prismjs";
 import PrismJsx from "prismjs/components/prism-jsx.min";
 import "prismjs/themes/prism-tomorrow.css";
 import ClipboardJS from "clipboard";
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import 'prismjs/plugins/line-numbers/prism-line-numbers';
+import 'prismjs/plugins/line-highlight/prism-line-highlight'
 
 export default function Code(props) {
   const lang = props.language;
@@ -74,7 +77,7 @@ export default function Code(props) {
           </svg>
         </div>
       </div>
-      <pre className="rounded" style={{ marginTop: 0 + "px" }}>
+      <pre className="rounded line-numbers max-h-96 overflow-y-scroll" style={{ marginTop: 0 + "px" }}>
         <code ref={codeRef} className={`language-${lang}`}>
           {code}
         </code>
