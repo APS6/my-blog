@@ -2,10 +2,7 @@ import { client } from "@/sanity/lib/client";
 
 export default async function getBlogs() {
     const query = '*[_type == "post"]';
-    const data = await client.fetch(query, {
-      next: {revalidate: 10 }
-    });
-  
+    const data = await client.fetch(query, { cache: 'no-store' });
     if (!data) {
       throw new Error("Failed to fetch data");
     }
