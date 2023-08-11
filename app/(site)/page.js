@@ -1,6 +1,8 @@
 import Link from "next/link";
 import getBlogs from "./utils/getBlogs";
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   const data = await getBlogs();
   const blogs = data.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
