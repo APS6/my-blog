@@ -17,6 +17,7 @@
     "@sanity/preview-kit": "^2.3.0",
     "@sanity/vision": "^3.14.0",
     "@types/react-syntax-highlighter": "^15.5.7",
+    "@vercel/analytics": "^1.0.2",
     "autoprefixer": "10.4.14",
     "clipboard": "^2.0.11",
     "eslint-config-next": "^13.5.3",

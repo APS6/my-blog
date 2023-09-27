@@ -1,5 +1,6 @@
 import './globals.css'
 import Nav from '@/components/nav'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Anirudha's Blog",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <Nav />
       <main className="w-full max-w-4xl m-auto px-5 pt-20">
         {children}
+        <Analytics />
         </main>
         </body>
     </html>
